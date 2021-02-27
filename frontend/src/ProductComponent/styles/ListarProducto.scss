@@ -1,0 +1,141 @@
+.listProduct_Title {
+  margin-top: 15px;
+  padding-bottom: 1em;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px;
+  border-style: solid;
+  border-bottom-color: #ededed;
+  width: 70rem;
+}
+
+.title_listP {
+  padding-left: 15px;
+  color: #ededed;
+  cursor: default;
+}
+
+.container_listaP {
+  margin: 1em auto;
+  height: auto;
+  box-shadow: -1px 4px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+.box-nuevo {
+  display: flex;
+  justify-content: space-between;
+}
+/*======================================================*/
+
+/*============ Botón de añadir Cliente =================*/
+.box-add {
+  display: inline-flex;
+  height: 40px;
+  padding: .5em;
+  align-items: center;
+  justify-content: center;
+  background: darkslategray;
+  margin-top: 1em;
+  margin-left: 1em;
+  border-radius: 10px;
+}
+
+.btn-add {
+  color: #ededed;
+  padding-right: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.icon-addBtn {
+  padding-right: .5em;
+}
+
+.btn-add:hover {
+  color: #12192c;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.box-add:hover {
+  background: #969191;
+  transition: 0.3s;
+}
+/*============================================*/
+.options-search {
+  background: none;
+  border-radius: 0;
+  color: #ededed;
+  width: 100%;
+  font-weight: bolder;
+}
+
+.wrapper-search {
+  margin: 1em;
+}
+
+.wrapper-search .box_search {
+  background: #12192c;
+  display: flex;
+  width: 400px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  box-shadow: -1px 4px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+.dropdown-busqueda {
+  width: 150px;
+  border-right: 2px solid #8c8888;
+}
+
+.wrapper-search .box_search .search_field {
+  width: 350px;
+  height: 100%;
+  position: relative;
+  top: 2px;
+}
+
+.wrapper-search .box_search .search_field .input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 38px;
+  outline: none;
+  background: none;
+  color: #ededed;
+}
+
+.wrapper-search .box_search .search_field .icon-lupa {
+  position: absolute;
+  top: 1px;
+  right: .8rem;
+  color: #ededed;
+  cursor: default;
+}
+
+.option-S {
+  font-weight: bolder;
+  color: #12192c;
+}
+
+/*=========== Tabla de productos =============*/
+.box-tabla {
+  display: flex;
+  justify-content: center;
+}
+
+.table-productos {
+  margin: 2em auto;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+.Ttabla {
+  font-size: 16px;
+  text-align: center;
+}

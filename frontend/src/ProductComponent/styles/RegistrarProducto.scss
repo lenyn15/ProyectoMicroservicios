@@ -1,0 +1,150 @@
+.registerProduct_Title {
+  margin-top: 5px;
+  padding-bottom: 1em;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px;
+  border-style: solid;
+  border-bottom-color: #ededed;
+  width: 70rem;
+}
+
+.title_registerP {
+  padding-left: 15px;
+  color: #ededed;
+  cursor: default;
+}
+
+.container_registerP {
+  display: flex;
+  margin: 1em auto;
+  height: auto;
+  box-shadow: -1px 4px 20px 0 rgba(0, 0, 0, 0.35);
+}
+/*====================================================*/
+
+/*============= Formulario de producto ===============*/
+.form_registerP {
+  margin: 1em;
+  background: #ededed;
+  padding: 16px 32px 24px;
+  width: auto;
+  height: 450px;
+  justify-content: space-between;
+}
+
+.container-form1, .form-precio {
+  display: flex;
+  justify-content: center;
+}
+
+.form-part2, .compra {
+  margin-left: 1em;
+}
+
+fieldset {
+  padding: 1em;
+  border-color: darkslategrey;
+}
+
+legend {
+  padding: 5px;
+}
+
+.legend-title {
+  font-size: 16px;
+  font-weight: bolder;
+  color: #121945;
+}
+
+.container-estado {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  width: 85%;
+  margin-left: 25px;
+}
+
+.container-btns {
+  margin: 1em;
+}
+/*===============================================*/
+
+/*============= Listas de Categorias y Marcas =====================*/
+.container-categoria, .container-marca {
+  padding: 1em;
+  margin: 1em;
+  background: #12192c;
+}
+
+.categoria-box, .marca-box {
+  border-color: #ededed;
+}
+
+.legend-title_C, .legend-title_M {
+  font-size: 16px;
+  font-weight: bolder;
+  color: #ededed;
+}
+
+/*=========== Formularios: ============================*/
+.formulario-categoria, .formulario-marca {
+  padding: 1em;
+  text-align: center;
+}
+
+.field-categoria, .field-marca {
+  position: relative;
+  height: 35px;
+  width: 100%;
+  display: flex;
+  background: #ededed;
+}
+
+.field-categoria input, .field-marca input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #222;
+  background: transparent;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn_guardar-categ, .btn_guardar-marca {
+  width: 100%;
+  height: 100%;
+  padding: .5em;
+  display: inline-block;
+  color: #ededed;
+  background: #2361ab;
+  font-weight: bold;
+}
+
+.space-categ, .space-marca {
+  margin-top: 16px;
+}
+
+.btn_guardar-categ:hover, .btn_guardar-marca:hover {
+  cursor: pointer;
+  color: #12192c;
+  background: grey;
+}
+
+.categoria-box, .marca-box {
+  display: flex;
+}
+
+.tabla-categorias, .tabla-marcas {
+  margin-left: 1em;
+}
+
+.title-P {
+  font-size: 15px;
+  background: #2361ab;
+}
+
+.checkbox {
+  outline: none;
+}
