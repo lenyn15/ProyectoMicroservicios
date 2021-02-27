@@ -1,0 +1,160 @@
+.title-details {
+  padding-bottom: 1em;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px;
+  border-style: solid;
+  border-bottom-color: #ededed;
+  width: 70rem;
+}
+
+.title-main {
+  padding-left: 15px;
+  color: #ededed;
+  cursor: default;
+}
+
+.container-main-viewC {
+  margin: 1em auto;
+  height: auto;
+  width: 70em;
+  box-shadow: -1px 4px 20px 0 rgba(0, 0, 0, 0.35);
+  padding: 1em 20px 30px 1em;
+}
+
+.dropdown-viewC {
+  width: 200px;
+  display: grid;
+  position: relative;
+}
+
+.dropdown-list-viewC {
+  width: 100%;
+  padding: .5em;
+  background: #12192c;
+}
+
+.custom-arrow-viewC {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #060811;
+  display: block;
+  height: 100%;
+  width: 2rem;
+  pointer-events: none;
+  padding-top: 8px;
+  padding-left: 10px;
+  color: #ededed;
+}
+/*=========================================================================*/
+
+.search-list {
+  padding-top: .2em;
+  padding-left: .5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*========================= Barra de busqueda ==========================*/
+.search-viewC {
+  margin-top: auto;
+  background: #12192c;
+  height: 40px;
+  border-radius: 40px;
+  padding: 5px;
+  display: inline-flex;
+  justify-content: left;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-btn_viewC {
+  color: #ededed;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: darkslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.search-txt_viewC {
+  border: none;
+  background: none;
+  outline: none;
+  color: #ededed;
+  float: left;
+  padding: 0 6px;
+  font-size: 15px;
+  transition: 0.4s;
+  width: 280px;
+}
+
+.search-viewC:hover > .search-btn_viewC {
+  background: #ededed;
+  color: #12192c;
+}
+/*===================================================*/
+
+/*============= Detalles de los clientes =============*/
+.card-box {
+  display: inline-flex;
+  width: 100%;
+  height: 14rem;
+  background: grey;
+  margin-top: 10px;
+  padding: .5em;
+}
+
+.card-client {
+  background: #12192c;
+  margin: 0;
+  width: 20em;
+  padding: 2.4em 20px 20px;
+  text-align: center;
+  color: #ededed;
+  cursor: default;
+}
+
+.card-client-title {
+  text-align: center;
+}
+
+.card-client-icon {
+  font-size: 40px;
+}
+
+.card-info {
+  padding: 1rem;
+  background: #ededed;
+  width: 80%;
+}
+
+.card-sales {
+  margin-left: 10px;
+  padding: 1rem;
+  width: 38em;
+  background: darkslategray;
+  cursor: default;
+}
+
+.card-sales-title {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ededed;
+}
+/*=================================================================*/
+
+/*============= Tabla de ventas ===============*/
+.table-details {
+  border-collapse: collapse;
+  margin: 5px auto;
+}
+
+.title-table {
+  font-size: 14px;
+}

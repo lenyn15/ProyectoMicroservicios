@@ -1,0 +1,203 @@
+/*================= Titulo ===================*/
+.container-titulo {
+  border: none;
+  background-color: #282c34;
+  padding: 1.5rem;
+  margin: 60px 0 10px 0;
+  display: inline-flex;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  cursor: default;
+}
+
+.container-titulo h2 {
+  font-weight: normal;
+  margin: auto;
+  color: white;
+}
+
+/*========== Tarjeta de Opciones ============0*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+}
+
+.container .card {
+  position: relative;
+  min-width: 250px;
+  height: 350px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+  inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.3),
+  -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border: 2px #1e1f23;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.container .card .tipo:hover {
+  transform: translateY(-30px);
+  background: #12192c;
+  cursor: default;
+}
+
+.container .card .registro:hover {
+  transform: translateY(-30px);
+  background: darkslategray;
+  cursor: default;
+}
+
+.container .card .detalle:hover {
+  transform: translateY(-30px);
+  background: #834a2a;
+  cursor: default;
+}
+
+.container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 5em;
+  color: rgba(255,255,255,0.05);
+}
+
+.container .card .box .content h3 {
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: rgb(255,255,255,0.5);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.container .card .box .content p {
+  font-size: 16px;
+  font-weight: bolder;
+  color: rgb(255,255,255,0.5);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.nav_btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon_options {
+  font-size: 3.5rem;
+}
+
+.btn_acceso {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  background: #262c37;
+  border-radius: 50px;
+  letter-spacing: 2px;
+}
+
+.btn_acceso span {
+  display: block;
+  position: absolute;
+  background: #2894ff;
+}
+
+.btn_acceso span:nth-child(1) {
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.btn_acceso:hover span:nth-child(1) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.btn_acceso span:nth-child(2) {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.btn_acceso:hover span:nth-child(2) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.btn_acceso span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.btn_acceso:hover span:nth-child(3) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.btn_acceso span:nth-child(4) {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.btn_acceso:hover span:nth-child(4) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.btn_T:hover {
+  color: #12192c;
+  background: #f5a623;
+}
+
+.btn_R:hover {
+  color: #ededed;
+  background: #12192c;
+}
+
+.btn_D:hover {
+  color:#12192c;
+  background: #ededed;
+}

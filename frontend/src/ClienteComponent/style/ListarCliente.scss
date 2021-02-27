@@ -1,0 +1,397 @@
+.listClient_Title {
+  margin-top: 15px;
+  padding-bottom: 1em;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px;
+  border-style: solid;
+  border-bottom-color: #ededed;
+  width: 70rem;
+}
+
+.title_listC {
+  padding-left: 15px;
+  color: #ededed;
+  cursor: default;
+}
+
+.container_listaC {
+  margin: 1em auto;
+  height: auto;
+  box-shadow: -1px 4px 20px 0 rgba(0, 0, 0, 0.35);
+
+}
+
+.busqueda_nuevo {
+  padding-top: .2em;
+  padding-left: .5em;
+  display: inline-flex;
+}
+
+/*============ Barra de busqueda =============*/
+.search-box {
+  margin-left: 20px;
+  margin-top: 20px;
+  background: #12192c;
+  height: 40px;
+  border-radius: 40px;
+  padding: 5px;
+  display: inline-flex;
+  justify-content: left;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-btn {
+  color: #ededed;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: darkslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  color: #ededed;
+  float: left;
+  padding: 0 6px;
+  font-size: 15px;
+  transition: 0.4s;
+  width: 280px;
+}
+
+.search-box:hover > .search-btn {
+  background: #ededed;
+  color: #12192c;
+}
+
+/*=====================================================*/
+
+/*============ Botón de añadir Cliente ================*/
+.add-box {
+  display: inline-flex;
+  height: 40px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  background: darkslategray;
+  margin-top: 20px;
+  margin-left: 36.5rem;
+  border-radius: 10px;
+}
+
+.add-btn {
+  color: #ededed;
+  padding-right: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.icon-add-btn {
+  padding-right: 1em;
+}
+
+.add-btn:hover {
+  color: #12192c;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.add-box:hover {
+  background: #969191;
+  transition: 0.3s;
+}
+
+/*===============================================*/
+
+/*=============== Tabla Clientes ===============*/
+
+.table-clientes {
+  margin: 2em auto;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+.field-descripcion {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #c6c1c1;
+}
+
+tr:nth-child(odd) {
+  background-color: #ededed;
+}
+
+/*==============================================*/
+
+/*======== Botones de editar y eliminar =========*/
+.btnVer {
+  margin-left: 1em;
+  color: #ededed;
+  background: #f5a623;
+}
+
+.btnVer:hover {
+  color: #12192c;
+  cursor: pointer;
+}
+
+/*==============================================*/
+
+/*=============== Formulario ==================*/
+.modal-wrapper {
+  top: 50%;
+  left: 40%;
+  background: #ededed;
+  width: auto;
+  margin: -37rem -12rem 0 0;
+  padding: 16px 32px 24px;
+  border: none;
+  outline: 0;
+  box-shadow: -1px 4px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+.modal-header {
+  padding: 1rem 5px 2rem 5px;
+  text-align: center;
+  transition: no;
+  display: inline-flex;
+}
+
+.modal-header h2 {
+  margin: 2px 4em 0 0;
+}
+
+.modal-body {
+  margin-bottom: 3rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.modal-footer {
+  padding-bottom: 1rem;
+}
+
+.btn-cancelar, .btn-guardar {
+  cursor: pointer;
+  margin: 0 3em 0 3em;
+  padding: 10px;
+  border-radius: 40px;
+  align-content: center;
+  justify-content: center;
+}
+
+.btn-guardar {
+  background: #2361ab;
+  color: #ededed;
+
+}
+
+.btn-cancelar {
+  background: firebrick;
+  color: #ededed;
+}
+
+.btn-guardar:hover {
+  background: #2361ab;
+  color: #12192c;
+  font-weight: bold;
+}
+
+.btn-cancelar:hover {
+  background: firebrick;
+  color: #12192c;
+  font-weight: bold;
+}
+
+.back-drop {
+  background: #32353c;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.form {
+  width: auto;
+  height: 50px;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #12192c;
+  font-weight: bold;
+  padding-top: 20px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+}
+
+.form .lbl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #121945;
+}
+
+.form .lbl:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #2361ab;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.txt {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+  color: #12192c;
+}
+
+.form input:focus + .lbl .txt,
+.form input:valid + .lbl .txt {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #2361ab;
+}
+
+.form input:focus + .lbl:after,
+.form input:valid + .lbl:after {
+  transform: translateY(0%);
+}
+
+.dropdown {
+  width: 100px;
+  display: grid;
+  position: relative;
+}
+
+select {
+  font-size: 16px;
+  border: none;
+  outline: 0;
+  background: darkslategray;
+  color: #ededed;
+  appearance: none;
+  width: 100px;
+  padding: 3px;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  background: #243b3b;
+  display: block;
+  height: 95%;
+  width: 2rem;
+  pointer-events: none;
+  padding-top: 5px;
+  color: #ededed;
+}
+/*=====================================================*/
+
+/*============== Ventana de informacion ===============*/
+
+.modal-wrapper2 {
+  top: 50%;
+  left: 40%;
+  background: #ededed;
+  width: auto;
+  margin: -32rem -12rem 0 0;
+  padding: 16px 32px 24px;
+  border: none;
+  outline: 0;
+  box-shadow: -1px 4px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+.container-view {
+  padding: inherit;
+}
+
+.title-client {
+  margin-top: 10px;
+  padding-bottom: 1em;
+  align-content: center;
+}
+
+.title {
+  color: #12192c;
+  text-align: center;
+  cursor: default;
+}
+
+.content-body1 {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.result-tipo, .result-code, .result-date, .result-state {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 2px;
+  border-style: solid;
+  border-bottom-color: #121945;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  text-align: center;
+  width: auto;
+  cursor: default;
+}
+
+.lbl-viewC {
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 0 7rem 0 0;
+}
+
+.content-body2 {
+  margin-bottom: -20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lbl-viewC2 {
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 0 5.5rem 0 0;
+}
+
+.dateR {
+  margin: 0 1rem 0 0;
+}
+
+.cdate {
+  margin-right: 20px;
+}
