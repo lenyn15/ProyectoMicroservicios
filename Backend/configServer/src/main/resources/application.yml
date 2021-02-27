@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: servicio-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lenyn15/ProyectoMicroservicios.git
+          searchPaths: Configuration-Server
+        default-label: master
+  security:
+    user:
+      name: root
+      password: v4L1d0
