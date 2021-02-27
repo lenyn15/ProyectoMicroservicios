@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+/*--- Variables: */
+
+$nav-width: 56px;
+$font-bold: 700;
+
+/*============ Colores ===================0*/
+:root {
+  --first-color: #12192c;
+  --second-color: #f5a623;
+  --white-color: #ededed;
+}
+
+:root {
+  --body-font: 'Quicksand', sans-serif;
+  --small-font-size: 0.875rem;
+  @media screen and (min-width: 768px) {
+    --small-font-size: 0.938rem;
+  }
+}
+
+/*============ z index =============*/
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/*=======================================================*/
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*============ NAV ===============*/
+.l-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $nav-width + 112px;
+  height: 100vh;
+  background-color: var(--first-color);
+  padding: 1.25rem .5rem 2rem;
+  transition: .5s;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 0 .5rem;
+    flex-direction: column;
+    cursor: default;
+
+    &-icon {
+      margin-right: 1.2rem;
+    }
+
+    &-text {
+      color: var(--white-color);
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    color: var(--white-color);
+    transition: .3s;
+
+    &:hover {
+      background-color: var(--second-color);
+      color: var(--first-color);
+    }
+  }
+
+  &__icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+}
+
+a.active {
+  background-color: var(--second-color);
+  color: var(--first-color);
+}
+
+.icon {
+  font-size: 3.5rem;
+  color: #ededed;
+}
