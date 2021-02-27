@@ -10,6 +10,7 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.3",
     "axios": "^0.21.1",
+    "moment": "^2.29.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -42,6 +43,7 @@
     ]
   },
   "devDependencies": {
-    "@fortawesome/free-brands-svg-icons": "^5.15.2"
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "reactstrap": "^8.9.0"
   }
 }

@@ -1,0 +1,211 @@
+.franja-titulo {
+  border: none;
+  background-color: #282c34;
+  padding: 1rem;
+  margin: 100px 0 50px 25px;
+  display: inline-flex;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  width: 930px;
+  cursor: default;
+}
+
+.franja-titulo h2 {
+  font-weight: bold;
+  margin: auto;
+  color: white;
+}
+
+.contenedor {
+  display: inline-flex;
+  background-size: cover;
+}
+
+
+/*========== Formulario =========*/
+.formulario {
+  position: relative;
+  margin-right: 200px;
+  left: 50px;
+  width: 300px;
+  padding: 30px 25px 40px 25px;
+  background: #32353c;
+  text-align: center;
+  box-shadow: -1px 4px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+.formulario h2 {
+  color: #ededed;
+  font-size: 25px;
+  margin: 0 0 35px 0;
+  cursor: default;
+}
+
+.field {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: #ededed;
+}
+
+.field input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #222;
+  background: transparent;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn_tguardar {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  display: inline-block;
+  color: #ffffff;
+  background: #12192c;
+  font-weight: bold;
+}
+
+.btn_tguardar:hover {
+  cursor: pointer;
+}
+
+.btn_tguardar span {
+  display: block;
+  position: absolute;
+  background: #ededed;
+}
+
+.btn_tguardar span:nth-child(1) {
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.btn_tguardar:hover span:nth-child(1) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.btn_tguardar span:nth-child(2) {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.btn_tguardar:hover span:nth-child(2) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.btn_tguardar span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.btn_tguardar:hover span:nth-child(3) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.btn_tguardar span:nth-child(4) {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.btn_tguardar:hover span:nth-child(4) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.space {
+  margin-top: 16px;
+}
+
+/*============== Tabla ==================*/
+.tabla-tipos {
+  border-collapse: collapse;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  margin: 5px 100px auto;
+  background: #ededed;
+}
+
+.contenido-titulo-tabla {
+  text-align: left;
+}
+
+th {
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #282c34;
+  font-size: 18px;
+}
+
+td {
+  padding: 1em;
+  margin: auto;
+  text-align: center;
+}
+
+th, td {
+  cursor: default;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.wrapper {
+  display: inline-flex;
+}
+
+.btnEditar, .btnEliminar, .btnVer {
+  display: flex;
+  height: 32px;
+  width: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btnEditar {
+  margin: 2px 1em 0 auto;
+  color: #ededed;
+  background: darkgreen;
+}
+
+.btnEliminar {
+  color: #ededed;
+  background: darkred;
+}
+
+.btnEditar:hover, .btnEliminar:hover {
+  color: #12192c;
+  cursor: pointer;
+}

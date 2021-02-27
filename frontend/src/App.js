@@ -2,6 +2,7 @@ import './App.css';
 import Menu                               from "./menuOpciones/menu";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import ComponenteCliente                  from "./ClienteComponent/ComponenteCliente";
+import ListarCliente                      from "./ClienteComponent/ListarCliente";
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
                 <Menu/>
                 <div className="components">
                     <Route path="/component-clientes" exact component={ ComponenteCliente }/>
+                    <Route path="/view-clientes" exact component={ ListarCliente }/>
                 </div>
             </Router>
         </div>

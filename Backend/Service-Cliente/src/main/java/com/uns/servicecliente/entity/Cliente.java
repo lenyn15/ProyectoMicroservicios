@@ -43,7 +43,7 @@ public class Cliente {
 	@Temporal( TemporalType.DATE )
 	private Date fecha_registro;
 	
-	@ManyToOne( fetch = FetchType.LAZY )
+	@ManyToOne( fetch = FetchType.EAGER )
 	@JoinColumn( name = "tipo_id" )
 	@JsonIgnoreProperties( { "hibernateLazyInitializer", "handler" } )
 	private Tipo tipo;
