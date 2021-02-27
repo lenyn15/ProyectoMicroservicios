@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../:\Documentos\Universidad Nacional del Santa\VIII CICLO\Arquitectura de Microservicios\Proyecto\Configuration-Server\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
