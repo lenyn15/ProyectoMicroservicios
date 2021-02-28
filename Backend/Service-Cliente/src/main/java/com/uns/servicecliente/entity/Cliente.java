@@ -34,7 +34,7 @@ public class Cliente {
 	private String codigo;
 	
 	@Column( name = "estado",
-	         length = 1,
+	         length = 45,
 	         nullable = false )
 	private String estado;
 	
