@@ -8,21 +8,16 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Table( name = "comprobante" )
+@Table( name = "venta" )
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Comprobante {
+public class Venta {
 	
 	@Id
 	@GeneratedValue( strategy = GenerationType.IDENTITY )
-	@Column( name = "id_comprobante",
+	@Column( name = "id_venta",
 	         updatable = false )
 	private int id;
-	
-	@Column( name = "tipo",
-	         length = 45,
-	         nullable = false )
-	private String tipo;
 }

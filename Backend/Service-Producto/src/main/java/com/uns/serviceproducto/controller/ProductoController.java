@@ -53,7 +53,7 @@ public class ProductoController {
 	}
 	
 	@PostMapping( "/registrar" )
-	public ResponseEntity<Producto> registrProducto( @RequestBody Producto producto ) {
+	public ResponseEntity<Producto> registrarProducto( @RequestBody Producto producto ) {
 		Producto nuevo = productoService.addNew( producto );
 		return new ResponseEntity<>( nuevo,
 		                             HttpStatus.CREATED );
@@ -62,6 +62,15 @@ public class ProductoController {
 	@PutMapping( "/actualizar" )
 	public ResponseEntity<Producto> actualizarProducto( @RequestBody Producto producto ) {
 		Producto actualizado = productoService.update( producto );
+		return new ResponseEntity<>( actualizado,
+		                             HttpStatus.OK );
+	}
+	
+	@PutMapping( "/actualizarCantidad/{idProducto}" )
+	public ResponseEntity<Producto> actualizarCantidad( @PathVariable( "idProducto" ) Integer id,
+	                                                    @RequestParam( name = "cantidad" ) Integer cantidad ) {
+		Producto actualizado = productoService.updateQuantity( id,
+		                                                       cantidad );
 		return new ResponseEntity<>( actualizado,
 		                             HttpStatus.OK );
 	}

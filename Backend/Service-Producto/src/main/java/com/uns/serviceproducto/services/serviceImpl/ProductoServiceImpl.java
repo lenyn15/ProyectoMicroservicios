@@ -70,4 +70,15 @@ public class ProductoServiceImpl implements ProductoService {
 				.filter( producto -> producto.getMarca().getNombre().contains( filtroMarca ) )
 				.collect( Collectors.toList() );
 	}
+	
+	@Override
+	public Producto updateQuantity( Integer idProducto,
+	                                Integer cantidad ) {
+		Producto productoActualizarC = findByID( idProducto );
+		if ( productoActualizarC == null ) {
+			return null;
+		}
+		productoActualizarC.setCantidad( productoActualizarC.getCantidad() + cantidad );
+		return productoRepository.save( productoActualizarC );
+	}
 }

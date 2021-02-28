@@ -18,7 +18,8 @@ public class Empleado {
 	
 	@Id
 	@GeneratedValue( strategy = GenerationType.IDENTITY )
-	@Column( name = "id_empleado" )
+	@Column( name = "id_empleado",
+	         updatable = false )
 	private int id;
 	
 	@Column( name = "nombres",

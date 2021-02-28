@@ -11,4 +11,7 @@ public interface ProductoService extends GeneralService<Producto, Integer> {
 	List<Producto> findByCategoria( String filtroCategoria );
 	
 	List<Producto> findByMarca( String filtroMarca );
+	
+	Producto updateQuantity( Integer id,
+	                         Integer cantidad );
 }

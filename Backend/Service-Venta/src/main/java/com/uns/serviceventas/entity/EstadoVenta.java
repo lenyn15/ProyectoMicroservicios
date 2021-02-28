@@ -17,7 +17,8 @@ public class EstadoVenta {
 	
 	@Id
 	@GeneratedValue( strategy = GenerationType.IDENTITY )
-	@Column( name = "id_estado_venta" )
+	@Column( name = "id_estado_venta",
+	         updatable = false )
 	private int id;
 	
 	@Column( name = "estado",

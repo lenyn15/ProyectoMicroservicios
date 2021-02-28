@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
 
 @Entity
 @Table( name = "producto" )
@@ -38,6 +39,7 @@ public class Producto {
 	
 	@Column( name = "cantidad",
 	         nullable = false )
+	@Min( value = 0 )
 	private int cantidad;
 	
 	@Column( name = "estado",
