@@ -51,10 +51,6 @@ public class VentaDetalle {
 	@JsonIgnoreProperties( { "hibernateLazyInitializer", "handler" } )
 	private Producto producto;
 	
-	public Double getPrecio() {
-		return producto.getPrecioVenta();
-	}
-	
 	public Double getSubtotal() {
 		if ( this.precio > 0 && this.cantidad > 0 ) {
 			return this.precio * this.cantidad;
