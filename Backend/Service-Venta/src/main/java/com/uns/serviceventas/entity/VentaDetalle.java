@@ -27,6 +27,7 @@ public class VentaDetalle {
 	         nullable = false )
 	private int cantidad;
 	
+	@Transient
 	@Column( name = "precio",
 	         columnDefinition = "DECIMAL(7,2)",
 	         nullable = false )
@@ -43,9 +44,18 @@ public class VentaDetalle {
 	         nullable = false )
 	private Double subtotal;
 	
+	@ManyToOne( fetch = FetchType.EAGER )
+	@JoinColumn( name = "venta_id" )
+	@JsonIgnoreProperties( { "hibernateLazyInitializer", "handler" } )
+	private Venta venta;
+	
 	@Transient
 	@JsonIgnoreProperties( { "hibernateLazyInitializer", "handler" } )
 	private Producto producto;
+	
+	public Double getPrecio() {
+		return producto.getPrecioVenta();
+	}
 	
 	public Double getSubtotal() {
 		if ( this.precio > 0 && this.cantidad > 0 ) {
