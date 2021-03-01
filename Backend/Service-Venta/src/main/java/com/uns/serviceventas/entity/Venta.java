@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table( name = "venta" )
@@ -52,4 +53,9 @@ public class Venta {
 	@JoinColumn( name = "estado_venta_id" )
 	@JsonIgnoreProperties( { "hibernateLazyInitializer", "handler" } )
 	private EstadoVenta estadoVenta;
+	
+	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
+	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinColumn(name = "venta_id")
+	private List<VentaDetalle> ventaDetalles;
 }
