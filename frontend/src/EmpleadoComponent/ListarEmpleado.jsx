@@ -33,7 +33,7 @@ class ListarEmpleado extends Component {
         this.changeApellido = this["changeApellido"].bind( this );
         this.changeTelefono = this["changeTelefono"].bind( this );
         this.changeEstado = this.changeEstado.bind( this );
-        this.changeFechaContrato = this.changeFechaContrato.bind( this );
+        this.changeFechaContrato = this.changeFechaContrato.bind( this);
     }
 
     componentDidMount() {
