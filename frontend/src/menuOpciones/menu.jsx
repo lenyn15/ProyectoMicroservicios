@@ -1,8 +1,9 @@
 import "./menu.scss"
-import React, { Component }                             from "react";
-import { FontAwesomeIcon }                              from "@fortawesome/react-fontawesome";
-import { faAppStore }                                   from "@fortawesome/free-brands-svg-icons";
-import { faBriefcase, faShoppingCart, faStore, faUser } from "@fortawesome/free-solid-svg-icons";
+import Logo                            from "./Assets/logo.png"
+import React, { Component }            from "react";
+import { FontAwesomeIcon }             from "@fortawesome/react-fontawesome";
+import { faBriefcase, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faStore, faUser }             from "@fortawesome/free-solid-svg-icons";
 
 class Menu extends Component {
     constructor( props ) {
@@ -16,7 +17,7 @@ class Menu extends Component {
                 <nav className="nav">
                     <div>
                         <div className="nav__logo">
-                            <i className="icon"><FontAwesomeIcon icon={ faAppStore }/></i>
+                            <i className="icon"><img src={ Logo } alt="logo"/></i>
                             <span className="nav__logo-text">Tienda Sidecom</span>
                         </div>
                         <ul className="nav__list">

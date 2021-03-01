@@ -20,7 +20,7 @@ class ComponenteCliente extends Component {
                     <div className="card">
                         <div className="box registro">
                             <div className="content">
-                                <h2>02</h2>
+                                <h2>01</h2>
                                 <h3>Registro</h3>
                                 <br/>
                                 <p>
@@ -43,7 +43,7 @@ class ComponenteCliente extends Component {
                     <div className="card">
                         <div className="box detalle">
                             <div className="content">
-                                <h2>03</h2>
+                                <h2>02</h2>
                                 <h3>Detalles</h3>
                                 <br/>
                                 <p>

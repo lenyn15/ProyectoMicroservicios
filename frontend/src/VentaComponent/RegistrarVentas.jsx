@@ -8,6 +8,10 @@ class RegistrarVentas extends Component {
 
     }
 
+    componentDidMount() {
+
+    }
+
 }
 
 export default RegistrarVentas
