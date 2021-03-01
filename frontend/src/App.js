@@ -7,6 +7,7 @@ import ListarDetalles                     from "./ClienteComponent/ListarDetalle
 import ListarProductos                    from "./ProductComponent/ListarProductos";
 import RegistrarProductos                 from "./ProductComponent/RegistrarProductos";
 import ListarEmpleado                     from "./EmpleadoComponent/ListarEmpleado";
+import RegistroVentas                     from "./VentaComponent/RegistroVentas";
 
 function App() {
     return (
@@ -22,6 +23,9 @@ function App() {
                     <Route path="/registro-producto/:id" exact component={ RegistrarProductos }/>
 
                     <Route path="/employees-list" exact component={ ListarEmpleado }/>
+
+                    <Route path="/" exact component={ RegistroVentas }/>
+                    <Route path="/service-ventas" exact component={ RegistroVentas }/>
                 </div>
             </Router>
         </div>

@@ -20,7 +20,7 @@ class Menu extends Component {
                             <span className="nav__logo-text">Tienda Sidecom</span>
                         </div>
                         <ul className="nav__list">
-                            <a href={ "/component-ventas" } className="nav__link">
+                            <a href={ "/service-ventas" } className="nav__link">
                                 <i className="nav__icon"><FontAwesomeIcon icon={ faStore }/></i>
                                 <span className="nav__text">Ventas</span>
                             </a>

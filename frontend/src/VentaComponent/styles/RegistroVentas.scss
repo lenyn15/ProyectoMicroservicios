@@ -1,0 +1,42 @@
+.listSales_Title {
+  margin-top: 15px;
+  padding-bottom: 1em;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px;
+  border-style: solid;
+  border-bottom-color: #ededed;
+  width: 70rem;
+}
+
+.container_listaV {
+  margin: 1em auto;
+  height: auto;
+  box-shadow: -1px 4px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+.title_listV {
+  padding-left: 15px;
+  color: #ededed;
+  cursor: default;
+}
+
+/*====================================================================*/
+
+/*================= Ventas ===================*/
+.employee-sales {
+  margin: 1em;
+}
+
+.option-E {
+  font-weight: bolder;
+  color: #12192c;
+}
+
+/*=========== Tabla de productos =============*/
+.table-ventas {
+  margin: 2em auto;
+  border-collapse: collapse;
+  width: 95%;
+}
