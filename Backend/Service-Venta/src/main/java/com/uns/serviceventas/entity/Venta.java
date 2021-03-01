@@ -24,13 +24,11 @@ public class Venta {
 	         updatable = false )
 	private int id;
 	
-	@Transient
 	@Column( name = "total",
 	         columnDefinition = "DECIMAL(7,2)",
 	         nullable = false )
 	private Double total;
 	
-	@Transient
 	@Column( name = "fecha_venta",
 	         nullable = false )
 	@Temporal( TemporalType.DATE )
