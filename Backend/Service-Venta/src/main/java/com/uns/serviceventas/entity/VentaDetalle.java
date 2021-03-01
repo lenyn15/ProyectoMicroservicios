@@ -27,7 +27,6 @@ public class VentaDetalle {
 	         nullable = false )
 	private int cantidad;
 	
-	@Transient
 	@Column( name = "precio",
 	         columnDefinition = "DECIMAL(7,2)",
 	         nullable = false )
@@ -38,7 +37,6 @@ public class VentaDetalle {
 	         nullable = false )
 	private Double descuento;
 	
-	@Transient
 	@Column( name = "sub_total",
 	         columnDefinition = "DECIMAL(7,2)",
 	         nullable = false )
