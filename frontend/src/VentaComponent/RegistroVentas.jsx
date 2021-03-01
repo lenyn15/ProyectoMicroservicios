@@ -74,6 +74,9 @@ class RegistroVentas extends Component {
                                 <th>Acciones</th>
                             </tr>
                             </thead>
+                            <tbody>
+
+                            </tbody>
                         </table>
                     </div>
                 </div>
