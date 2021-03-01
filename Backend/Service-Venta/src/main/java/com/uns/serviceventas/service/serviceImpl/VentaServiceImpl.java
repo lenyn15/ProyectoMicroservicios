@@ -74,4 +74,19 @@ public class VentaServiceImpl implements VentaService {
 	public void delete( Integer idVenta ) {
 		ventaRepository.deleteById( idVenta );
 	}
+	
+	@Override
+	public List<Cliente> listarClientes() {
+		return feignCliente.listarClientes().getBody();
+	}
+	
+	@Override
+	public List<Cliente> filtrarClientes( String nombre ) {
+		return feignCliente.filtrarClientes( nombre ).getBody();
+	}
+	
+	@Override
+	public Cliente buscarCliente( Integer idCliente ) {
+		return feignCliente.buscarCliente( idCliente ).getBody();
+	}
 }

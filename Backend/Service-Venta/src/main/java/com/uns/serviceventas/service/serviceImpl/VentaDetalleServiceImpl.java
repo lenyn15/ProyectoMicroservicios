@@ -1,9 +1,7 @@
 package com.uns.serviceventas.service.serviceImpl;
 
-import com.uns.serviceventas.client.FeignCliente;
 import com.uns.serviceventas.client.FeignProducto;
 import com.uns.serviceventas.entity.VentaDetalle;
-import com.uns.serviceventas.model.Cliente;
 import com.uns.serviceventas.model.Producto;
 import com.uns.serviceventas.repository.VentaDetalleRepository;
 import com.uns.serviceventas.service.VentaDetalleService;
@@ -16,15 +14,12 @@ import java.util.List;
 public class VentaDetalleServiceImpl implements VentaDetalleService {
 	
 	private final VentaDetalleRepository ventaDetalleRepository;
-	private final FeignCliente           feignCliente;
 	private final FeignProducto          feignProducto;
 	
 	@Autowired
 	public VentaDetalleServiceImpl( VentaDetalleRepository ventaDetalleRepository,
-	                                FeignCliente feignCliente,
 	                                FeignProducto feignProducto ) {
 		this.ventaDetalleRepository = ventaDetalleRepository;
-		this.feignCliente           = feignCliente;
 		this.feignProducto          = feignProducto;
 	}
 	
@@ -59,16 +54,6 @@ public class VentaDetalleServiceImpl implements VentaDetalleService {
 	}
 	
 	@Override
-	public List<Cliente> listarClientes() {
-		return feignCliente.listarClientes().getBody();
-	}
-	
-	@Override
-	public List<Cliente> filtrarClientes( String nombre ) {
-		return feignCliente.filtrarClientes( nombre ).getBody();
-	}
-	
-	@Override
 	public List<Producto> listarProductos() {
 		return feignProducto.listarProductos().getBody();
 	}
@@ -76,5 +61,10 @@ public class VentaDetalleServiceImpl implements VentaDetalleService {
 	@Override
 	public List<Producto> filtrarProductos( String nombre ) {
 		return feignProducto.filtrarPorNombre( nombre ).getBody();
+	}
+	
+	@Override
+	public Producto buscarProducto( Integer idProducto ) {
+		return feignProducto.buscarProducto( idProducto ).getBody();
 	}
 }

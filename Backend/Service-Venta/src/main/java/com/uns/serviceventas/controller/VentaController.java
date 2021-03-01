@@ -1,6 +1,7 @@
 package com.uns.serviceventas.controller;
 
 import com.uns.serviceventas.entity.Venta;
+import com.uns.serviceventas.model.Cliente;
 import com.uns.serviceventas.service.VentaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -25,6 +26,24 @@ public class VentaController {
 	@GetMapping( "/listar" )
 	public ResponseEntity<List<Venta>> listarVentas() {
 		return new ResponseEntity<>( ventaService.listAll(),
+		                             HttpStatus.OK );
+	}
+	
+	@GetMapping( "/clientes" )
+	public ResponseEntity<List<Cliente>> listarClientes() {
+		return new ResponseEntity<>( ventaService.listarClientes(),
+		                             HttpStatus.OK );
+	}
+	
+	@GetMapping( "/clientes/filtro/{nombreCliente}" )
+	public ResponseEntity<List<Cliente>> filtrarClientes( @PathVariable( "nombreCliente" ) String nombre ) {
+		return new ResponseEntity<>( ventaService.filtrarClientes( nombre ),
+		                             HttpStatus.OK );
+	}
+	
+	@GetMapping( "/cliente/buscar/{idCliente}" )
+	public ResponseEntity<Cliente> buscarCliente( @PathVariable( "idCliente" ) Integer id ) {
+		return new ResponseEntity<>( ventaService.buscarCliente( id ),
 		                             HttpStatus.OK );
 	}
 	
