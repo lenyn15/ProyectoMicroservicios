@@ -3,6 +3,7 @@ package com.uns.serviceventas.service.serviceImpl;
 import com.uns.serviceventas.entity.Empleado;
 import com.uns.serviceventas.repository.EmpleadoRepository;
 import com.uns.serviceventas.service.EmpleadoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,6 +14,7 @@ public class EmpleadoServiceImpl implements EmpleadoService {
 	
 	private final EmpleadoRepository empleadoRepository;
 	
+	@Autowired
 	public EmpleadoServiceImpl( EmpleadoRepository empleadoRepository ) {
 		this.empleadoRepository = empleadoRepository;
 	}
