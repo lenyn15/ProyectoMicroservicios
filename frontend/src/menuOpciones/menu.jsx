@@ -30,7 +30,7 @@ class Menu extends Component {
                                 <span className="nav__text">Productos</span>
                             </a>
 
-                            <a href={ "/component-empleados" } className="nav__link">
+                            <a href={ "/employees-list" } className="nav__link">
                                 <i className="nav__icon"><FontAwesomeIcon icon={ faBriefcase }/></i>
                                 <span className="nav__text">Empleados</span>
                             </a>

@@ -6,6 +6,7 @@ import ListarCliente                      from "./ClienteComponent/ListarCliente
 import ListarDetalles                     from "./ClienteComponent/ListarDetalles";
 import ListarProductos                    from "./ProductComponent/ListarProductos";
 import RegistrarProductos                 from "./ProductComponent/RegistrarProductos";
+import ListarEmpleado                     from "./EmpleadoComponent/ListarEmpleado";
 
 function App() {
     return (
@@ -19,6 +20,8 @@ function App() {
 
                     <Route path="/product-list" exact component={ ListarProductos }/>
                     <Route path="/registro-producto/:id" exact component={ RegistrarProductos }/>
+
+                    <Route path="/employees-list" exact component={ ListarEmpleado }/>
                 </div>
             </Router>
         </div>
