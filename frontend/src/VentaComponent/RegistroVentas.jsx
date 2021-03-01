@@ -1,8 +1,9 @@
 import "./styles/RegistroVentas.scss"
-import React, { Component }          from "react";
-import EmpleadoService               from "../EmpleadoComponent/service/EmpleadoService";
-import { FontAwesomeIcon }           from "@fortawesome/react-fontawesome";
-import { faCartArrowDown, faSearch } from "@fortawesome/free-solid-svg-icons";
+import React, { Component }                          from "react";
+import EmpleadoService                               from "../EmpleadoComponent/service/EmpleadoService";
+import VentaService                                  from "./service/VentaService";
+import { FontAwesomeIcon }                           from "@fortawesome/react-fontawesome";
+import { faCartArrowDown, faPen, faSearch, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 class RegistroVentas extends Component {
 
@@ -12,7 +13,7 @@ class RegistroVentas extends Component {
             ventas : [],
             empleados : [],
 
-            IDempleadoSelect : '1',
+            IDempleadoSelect : '4',
         }
 
         this.optionSelected = this["optionSelected"].bind( this );
@@ -23,6 +24,15 @@ class RegistroVentas extends Component {
                        .then( listaE => {
                            this.setState( { empleados : listaE.data } )
                        } )
+        VentaService.mostrarVentas()
+                    .then( listaV => {
+                        this.setState( { ventas : listaV.data } )
+                    } )
+    }
+
+
+    registrarVenta( idEmpleado ) {
+        this.props.history.push( "/registro-producto/agregar/" + idEmpleado )
     }
 
     optionSelected = ( event ) => {
@@ -39,7 +49,8 @@ class RegistroVentas extends Component {
                 <div className="container_listaV">
                     <div className="box-nuevo">
                         <div className="box-add">
-                            <a className="btn-add btnNew" /*onClick={ this.agregarProducto }*/>
+                            <a className="btn-add btnNew"
+                               onClick={ () => this.registrarVenta( this.state.IDempleadoSelect ) }>
                                 <i className="icon-addBtn"><FontAwesomeIcon icon={ faCartArrowDown }/></i>
                                 Nueva Venta
                             </a>
@@ -74,9 +85,29 @@ class RegistroVentas extends Component {
                                 <th>Acciones</th>
                             </tr>
                             </thead>
-                            <tbody>
-
-                            </tbody>
+                            <tbody>{
+                                this.state.ventas.map(
+                                    venta =>
+                                        <tr key={ venta.id }>
+                                            <td>{ venta.fecha }</td>
+                                            <td>{ venta.total }</td>
+                                            <td>
+                                                <div className="wrapper">
+                                                    <a className="btnEditar"
+                                                        /*onClick={ () => this.editarProducto( producto.id ) }*/>
+                                                        <i><FontAwesomeIcon icon={ faPen } className="iconFont"/></i>
+                                                    </a>
+                                                </div>
+                                                <div className="wrapper">
+                                                    <a href={ window.location.pathname } className="btnEliminar"
+                                                        /*onClick={ () => this.eliminarProduct( producto.id ) }*/>
+                                                        <i><FontAwesomeIcon icon={ faTrash } className="iconFont"/></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                )
+                            }</tbody>
                         </table>
                     </div>
                 </div>

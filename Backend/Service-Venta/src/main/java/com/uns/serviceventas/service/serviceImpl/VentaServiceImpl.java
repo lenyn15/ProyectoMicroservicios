@@ -62,6 +62,12 @@ public class VentaServiceImpl implements VentaService {
 				.getVentaDetalles()
 				.forEach( detalle -> feignProducto.actualizarCantidad( detalle.getProducto().getId(),
 				                                                       detalle.getCantidad() * -1 ) );
+		Double             total    = 0.0;
+		List<VentaDetalle> detalles = venta.getVentaDetalles();
+		for ( VentaDetalle detalle : detalles ) {
+			total += detalle.getSubtotal();
+		}
+		ventaNueva.setTotal( total );
 		return ventaNueva;
 	}
 	
