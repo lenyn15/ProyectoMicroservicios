@@ -18,7 +18,7 @@ class Menu extends Component {
                     <div>
                         <div className="nav__logo">
                             <i className="icon"><img src={ Logo } alt="logo"/></i>
-                            <span className="nav__logo-text">Tienda Sidecom</span>
+                            <span className="nav__logo-text">Libreria Sidecom</span>
                         </div>
                         <ul className="nav__list">
                             <a href={ "/service-ventas" } className="nav__link">
