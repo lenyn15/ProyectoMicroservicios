@@ -35,12 +35,12 @@ class ListarClientes extends Component {
         this.abrirModal = this["abrirModal"].bind( this );
         this.abrirVInfo = this["abrirVInfo"].bind( this );
         this.actionsUpdate = this["actionsUpdate"].bind( this );
-        this.actionVerInfo = this.actionVerInfo.bind( this );
-        this.actionsNew = this.actionsNew.bind( this );
-        this.chooseMethod = this.chooseMethod.bind( this );
+        this.actionVerInfo = this["actionVerInfo"].bind( this );
+        this.actionsNew = this["actionsNew"].bind( this );
+        this.chooseMethod = this["chooseMethod"].bind( this );
 
-        this.optionSelected = this.optionSelected.bind( this );
-        this.changeNombre = this.changeNombre.bind( this );
+        this.optionSelected = this["optionSelected"].bind( this );
+        this.changeNombre = this["changeNombre"].bind( this );
         this.changeCodigo = this.changeCodigo.bind( this );
         this.changeEstado = this.changeEstado.bind( this );
         this.changeFechaR = this.changeFechaR.bind( this );
