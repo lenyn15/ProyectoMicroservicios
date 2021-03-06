@@ -8,6 +8,7 @@ import ListarProductos                    from "./ProductComponent/ListarProduct
 import RegistrarProductos                 from "./ProductComponent/RegistrarProductos";
 import ListarEmpleado                     from "./EmpleadoComponent/ListarEmpleado";
 import RegistroVentas                     from "./VentaComponent/RegistroVentas";
+import RegistrarVentas                    from "./VentaComponent/RegistrarVentas";
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
 
                     <Route path="/" exact component={ RegistroVentas }/>
                     <Route path="/service-ventas" exact component={ RegistroVentas }/>
+                    <Route path="/registro-venta/:id" exact component={ RegistrarVentas }/>
                 </div>
             </Router>
         </div>

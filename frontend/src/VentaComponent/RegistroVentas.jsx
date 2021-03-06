@@ -32,7 +32,7 @@ class RegistroVentas extends Component {
 
 
     registrarVenta( idEmpleado ) {
-        this.props.history.push( "/registro-producto/agregar/" + idEmpleado )
+        this.props.history.push( "/registro-venta/" + idEmpleado )
     }
 
     optionSelected = ( event ) => {
